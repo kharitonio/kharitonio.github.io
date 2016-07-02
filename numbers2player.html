@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Личный сайт студента GeekBrains</title>
+	<link rel="stylesheet" href="style.css">
+
+	<script type="text/javascript">
+
+function Play(){
+
+
+		var answer = parseInt(Math.random()*100);
+
+
+
+		for (var i = 7; i > 0, i--;){
+
+			var number1 = parseInt(prompt("Игрок 1, попробуйте отгадать число от 1 до 100 быстрее вашего соперника за 7 попыток! Кто победит?"));
+			var number2 = parseInt(prompt("Игрок 2, попробуйте отгадать число от 1 до 100 быстрее вашего соперника за 7 попыток! Кто победит?"));
+
+
+
+		if(number1 == answer && number2 == answer){
+			alert("Молодцы, вы оба выиграли! Ничья!");
+			break;
+		}
+			else if(number1 == answer){
+			alert("Молодец! Игрок 1, ты выиграл!");
+			break;
+		}
+			else if(number2 == answer){
+			alert("Молодец! Игрок 2, ты выиграл!");
+			break;
+		} else if (number1 < answer && number2 < answer){
+			alert("Мало! Попробуйте число больше!");
+		} else if (number1 < answer && number2 > answer){
+			alert("Мало! Игрок 1, попробуй число больше \nИгрок 2, Попробуй число меньше");
+		} else if (number1 > answer && number2 < answer){
+			alert("Мало! Игрок 1, попробуй число меньше \nИгрок 2, Попробуй число больше");
+		} else if (number1 > answer && number2 > answer){
+			alert("Много!! Попробуйте число меньше!");
+		}
+
+		}
+		if(number1 == answer || number2 == answer){
+
+		}
+			else {
+
+
+
+		alert ("К сожалению никто не смог отгадать за 7 попыток");
+
+		}
+}
+</script>
+</head>
+<body>
+	<div id="header">
+		<a href="index.html">Главная</a><span>/</span>
+		<a href="конвертор.html">Конвертор валют</a><span>/</span>
+		<a href="bank.html">Банковский калькулятор</a><span>/</span>
+		<a href="puzzlefunction.html">Загадки</a><span>/</span>
+		<a href="numbers.html">Угадайка</a><span>/</span>
+		<a href="#">Угадайка для двух игроков</a><span>/</span>
+		
+		
+	</div>
+<div id="content">
+	<h1>Игра в числа на двух игроков!</h1>
+
+
+		<div id="box">
+			<h2>
+			Соревнуйтесь с другом кто быстрее отгдает загаданное число от 1 до 100 за 7 попыток!
+			</h2>
+			
+
+			<a href="#" onclick="Play()">Начать игру!</a>
+
+
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+	Copyright © 2016 <a href="https://vk.com/turambar"> Kharitonio </a>
+</div>
+
+</body>
+</html>
